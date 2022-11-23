@@ -14,7 +14,7 @@
                 <a href="#" class="text-selected-text">Home</a>
                 <a href="#about">About</a>
                 <a href="#services">Services</a>
-                <a href="#contact-us"><button class="px-6 py-2 bg-theme font-bold">Contact Us</button></a>
+                <a href="#contact-us"><button class="px-6 py-2 bg-theme font-bold text-white">Contact Us</button></a>
             </div>
         
             <div id="dropdown-wrapper" class="inline-block md:hidden">
@@ -23,12 +23,12 @@
 						<path d="M13 17.5H0.25V14.6667H13V17.5ZM25.75 10.4167H0.25V7.58333H25.75V10.4167ZM25.75 3.33333H13V0.5H25.75V3.33333Z" fill="black"/>
 					</svg>
             	</button>
-				<div id="menu" class="-ml-32 hidden flex flex-col bg-white drop-shadow-md position: absolute  ">
+				<div id="menu" class="-ml-32 hidden flex flex-col bg-white drop-shadow-md position: absolute z-2 ">
 					<a href="#" class="px-5 py-3 hover:text-selected-text border-b border-gray-200  text-selected-text">Home</a>
 					<a href="#about" class="px-5 py-3 hover:text-selected-text border-b border-gray-200 text-black">About</a>
 					<a href="#services" class="px-5 py-3 hover:text-selected-text border-b border-gray-200 text-black">Services</a>
 
-					<a href="#hire" class="px-5 py-3 hover:text-selected-text border-b border-gray-200 text-black">
+					<a href="#hire" class="px-5 py-3 hover:text-selected-text border-b border-gray-200 text-white">
 						<button class="px-6 py-2 bg-theme font-bold">Contact Us</button>
 					</a>
 					
@@ -37,34 +37,39 @@
 
     </header>
 
-    <div class="flex container  justify-center items-center mx-auto px-8  w-full">
-        <div class="container flex justify-center flex-wrap md:flex-nowrap  ">
-            <div class=" container flex flex-wrap  justify-center  items-center max-w-xl my-36">
-                <h1 class="text-5xl font-extrabold dark:text-white md:text-6xl lg:text-7xl text-center ">
+	<!-- Hero -->
+	<section class="lg:absolute w-full h-full ">
+		<div class="flex relative justify-center items-center  w-full h-full  bg-cover bg-center bg-sky-400" >
+			
+
+			<img src="images/hero.jpg" alt="Marvin" class="lg:absolute w-full h-full opacity-75  " >
+		
+			<div class=" my-36 absolute  ">
+				<h1 class="text-5xl font-extrabold text-white  md:text-6xl lg:text-7xl text-center ">
 					
 					Profesional and<br> World Class
-					<small class="ml-2 font-semibold text-gray-500 dark:text-gray-400"><br>Always On Point<br></small>
+					<small class="ml-2 font-semibold  dark:text-gray-400"><br>Always On Point<br></small>
 				</h1>
 					
 
-                <div class="w-full flex justify-center items-center">
-					<a href="#projects">
-						<button  class="px-8 py-4 bg-theme text-white font-bold mt-12 flex items-center space-x-3">
-							<div>
-								<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path fill="white" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/> 
-                                </svg>								
-							</div>
-							<span>Contact Us</span>
+				<div class="flex justify-center items-center mt-12 ">
+					<a href="#" >
+						<button  class="flex items-center space-x-3 px-8 py-4 bg-theme text-white font-bold ">
+							Contact Us
 						</button>
 					</a>
-                    
-                </div>
-            </div>   
-            <img src="images/hero.jpg" alt="Marvin" class=" w-full mt-0 md:absolute  md:mt-0 right-0 -z-1 " >
+					
+					
+				</div>
+			</div>  
+
+		
+			
 			
 		</div>
-    </div>
+		
+	</section>
+    
 
     <script src="/src/main.js"></script>
   
