@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/tailwind.css" rel="stylesheet">
+</head>
+<body>
+    <header class="py-6 border-b-2 border-theme">
+        <div class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+            <div class="text-lg font-bold"><a href="#" >Corecta</a></div>
+            <div class="hidden md:flex space-x-12 items-center ">
+                <a href="#" class="">Home</a>
+                <a href="#about">About</a>
+				
+				<!-- Services dropdown -->
+				<div id="dropdown-wrapper" class="inline-block">
+
+					<button onclick="toggleMenu('servicesMenu')" class=" text-black">
+						<div class="flex flex-row items-center gap-1 text-selected-text">
+							Services
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill pt-1" viewBox="0 0 16 16"> 
+								<path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/> 
+							</svg>
+						</div>
+					</button>
+					<div id="servicesMenu" class=" hidden flex flex-col bg-white drop-shadow-md position: absolute z-2 ">
+						<a href="#" class="px-5 py-3 hover:text-selected-text border-b border-gray-200 text-black">Data Center Cleaning</a>
+						<a href="#" class="px-5 py-3 hover:text-selected-text border-b border-gray-200 text-black">PC & Server Maintenance</a>
+						<a href="#" class="px-5 py-3 hover:text-selected-text border-b border-gray-200 text-black">Network Design & Implementation</a>
+						<a href="#" class="px-5 py-3 hover:text-selected-text border-b border-gray-200 text-black">IT & Information Security</a>
+					</div>
+
+				</div>
+				
+                
+                <a href="#contact-us"><button class="px-6 py-2 bg-theme font-bold text-white">Contact Us</button></a>
+            </div>
+        
+			<!-- Mobile Menu -->
+            <div id="dropdown-wrapper" class="inline-block md:hidden">
+				<button onclick="toggleMenu('mobileMenu')" class=" text-black">
+					<svg width="26"  height="18" viewBox="0 0 26 18" fill="red" xmlns="http://www.w3.org/2000/svg">
+						<path d="M13 17.5H0.25V14.6667H13V17.5ZM25.75 10.4167H0.25V7.58333H25.75V10.4167ZM25.75 3.33333H13V0.5H25.75V3.33333Z" fill="black"/>
+					</svg>
+            	</button>
+				<div id="mobileMenu" class="-ml-64 hidden flex flex-start flex-col bg-white drop-shadow-md position: absolute z-2  w-72">
+					<a href="#" class="px-5 py-3 hover:text-selected-text border-b border-gray-200 ">Home</a>
+					<a href="#about" class="px-5 py-3 hover:text-selected-text border-b border-gray-200 text-black">About</a>
+
+					<!-- Services Mobile dropdown -->
+					<div id="dropdown-wrapper" class="inline-block px-5 py-3 border-b border-gray-200">
+
+						<button onclick="toggleMenu('mobileServicesMenu')" class=" text-black">
+							<div class="flex flex-row items-center gap-1 text-selected-text">
+								Services
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill pt-1" viewBox="0 0 16 16"> 
+									<path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/> 
+								</svg>
+							</div>
+						</button>
+					</div>
+					<div id="mobileServicesMenu" class="hidden flex flex-col text-sm ">
+						<a href="#" class="px-10 py-3 hover:text-selected-text border-b border-gray-100 text-black">Data Center Cleaning</a>
+						<a href="#" class="px-10 py-3 hover:text-selected-text border-b border-gray-100 text-black">PC & Server Maintenance</a>
+						<a href="#" class="px-10 py-3 hover:text-selected-text border-b border-gray-100 text-black">Network Design & Implementation</a>
+						<a href="#" class="px-10 py-3 hover:text-selected-text border-b border-gray-100 text-black">IT & Information Security</a>
+					</div>
+
+					<a href="#hire" class="px-5 py-3 hover:text-selected-text border-b border-gray-200 text-white">
+						<button class="px-6 py-2 bg-theme font-bold">Contact Us</button>
+					</a>
+					
+				</div>
+			</div>
+
+    </header>
+
+	<!-- Hero -->
+	<section>
+		<div class="flex relative justify-center items-center h-full bg-cover bg-center bg-sky-400" >
+			
+
+			<img src="images/datacentercleanninghero.png" alt="Marvin" class=" w-full   opacity-75  " >
+		
+			<div class=" my-36 absolute  ">
+				<h1 class="text-5xl font-extrabold text-white  md:text-6xl lg:text-7xl text-center ">
+					
+					Server Room & <br> Data Center Cleaning
+					<small class="ml-2 font-semibold  dark:text-gray-400"><br>#1 in Ghana<br></small>
+				</h1>
+					
+
+				<div class="flex justify-center items-center mt-12 ">
+					<a href="#" >
+						<button  class="flex items-center space-x-3 px-8 py-4 bg-theme text-white font-bold ">
+							Contact Us
+						</button>
+					</a>
+					
+					
+				</div>
+			</div>  
+
+		
+		</div>
+
+		
+	</section>
+
+
+	<!-- Why Corecta -->
+	<section>
+
+		<div class="flex flex-col bg-slate-100 pb-32">
+			<div class="w-full  text-black text-start  text-xl text-slate-500  px-8" >
+				
+					<div class="flex flex-col  items-center  px-8 xl:px-64 ">
+						<h3 class="text-3xl font-bold p-8">Global Standard Processes</h3>
+						<p class="">
+							Airborne contamination is inevitable in server rooms and data centers. 
+                            The contamination could emanate from people entering these critical IT environments, 
+                            equipment being used within these rooms and other sources close to these facilities. 
+                            As dust settles on IT equipment, it builds up over time and can lead to potential problems such as: corrosion, 
+                            heat build-up, static conductivity and ultimately equipment failure. 
+                            Corecta has well trained cleaning specialists who apply strict server room /data center cleaning standards in order to ensure that your IT environments are kept clean at all times. 
+                            We also conduct indoor air quality (IAQ) assessments for your server rooms and data centers in Ghana and beyond. Our cleaning services include:
+                            
+                        </p>
+                        <ul class="list-disc pt-6">
+                            <li>Raised floor cleaning</li>
+                            <li>IT equipment cleaning</li>
+                            <li>Overhead area cleaning</li>
+                            <li>Subfloor cleaning</li>
+                            <li>Post disaster cleaning</li>
+                            <li>Post data center construction cleaning</li>
+
+                        </ul>
+					</div>
+					
+				
+			</div>
+		</div>
+		
+	</section>
+    <!-- Contact Us -->
+    <section class="flex w-full justify-center p-32">
+        
+			<div class="flex flex-col ">
+				<h2 class="text-black text-center text-5xl pt-16 font-bold">Corecta</h2>
+				<h3 class="text-black text-center text-2xl text-slate-500 pt-2 pb-8">World Class IT Services in Ghana</h3>
+                <div class="flex justify-center ">
+                    <a href="#contact-us"><button class="px-6 py-2 bg-theme font-bold text-white self-center ">Contact Us</button></a>
+	
+                </div>
+               
+			</div>
+			
+       
+    </section>
+
+	
+
+    <script src="/src/main.js"></script>
+  
+</body>
+</html>
