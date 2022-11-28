@@ -1,12 +1,14 @@
 
-var menu = document.getElementById("menu");
+
 
 // open/close the menu when the user clicks on the button
-function toggleMenu() {
-	if (menu.classList.contains('hidden')) {
-		menu.classList.remove('hidden');
+function toggleMenu(menu) {
+	var currentMenu = document.getElementById(menu);
+
+	if (currentMenu.classList.contains('hidden')) {
+		currentMenu.classList.remove('hidden');
 	} else {
-		menu.classList.add('hidden');
+		currentMenu.classList.add('hidden');
 	}
 }
 
