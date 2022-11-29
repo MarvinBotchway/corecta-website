@@ -9,16 +9,16 @@
 <body>
 	<header class="py-6 border-b-2 border-theme">
         <div class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
-            <div class="text-lg font-bold"><a href="#" >Corecta</a></div>
+            <div class="text-lg font-bold"><a href="index.html" ><img src="./images/corecta-logo.png" class="w-32"></a></div>
             <div class="hidden md:flex space-x-12 items-center ">
-                <a href="./index.html" class="text-selected-text">Home</a>
+                <a href="./index.html" >Home</a>
                 <a href="./about-us.html">About</a>
 				
 				<!-- Services dropdown -->
 				<div id="dropdown-wrapper" class="inline-block">
 
 					<button onclick="toggleMenu('servicesMenu')" class=" text-black">
-						<div class="flex flex-row items-center gap-1">
+						<div class="flex flex-row items-center gap-1 text-selected-text">
 							Services
 							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill pt-1" viewBox="0 0 16 16"> 
 								<path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/> 
@@ -28,7 +28,7 @@
 					<div id="servicesMenu" class=" hidden flex flex-col bg-white drop-shadow-md position: absolute z-2 ">
 						<a href="./data-center-cleanning.html" class="px-5 py-3 hover:text-selected-text border-b border-gray-200 text-black">Data Center Cleaning</a>
 						<a href="./pc-and-server-maintenance.html" class="px-5 py-3 hover:text-selected-text border-b border-gray-200 text-black">PC & Server Maintenance</a>
-						<a href="./network-design-and-implementation.html" class="px-5 py-3 hover:text-selected-text border-b border-gray-200 text-black">Network Design & Implementation</a>
+						<a href="./network-design-and-implementation.html" class="px-5 py-3 hover:text-selected-text border-b border-gray-200 text-selected-text">Network Design & Implementation</a>
 						<a href="./it-and-information-security.html" class="px-5 py-3 hover:text-selected-text border-b border-gray-200 text-black">IT & Information Security</a>
 					</div>
 
@@ -46,14 +46,14 @@
 					</svg>
             	</button>
 				<div id="mobileMenu" class="-ml-64 hidden flex flex-start flex-col bg-white drop-shadow-md position: absolute z-2  w-72">
-					<a href="./index.html" class="px-5 py-3 hover:text-selected-text border-b border-gray-200  text-selected-text">Home</a>
+					<a href="./index.html" class="px-5 py-3 hover:text-selected-text border-b border-gray-200">Home</a>
 					<a href="./about-us.html" class="px-5 py-3 hover:text-selected-text border-b border-gray-200 text-black">About</a>
 
 					<!-- Services Mobile dropdown -->
 					<div id="dropdown-wrapper" class="inline-block px-5 py-3 border-b border-gray-200">
 
 						<button onclick="toggleMenu('mobileServicesMenu')" class=" text-black">
-							<div class="flex flex-row items-center gap-1">
+							<div class="flex flex-row items-center gap-1 text-selected-text">
 								Services
 								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill pt-1" viewBox="0 0 16 16"> 
 									<path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/> 
@@ -64,7 +64,7 @@
 					<div id="mobileServicesMenu" class="hidden flex flex-col text-sm ">
 						<a href="./data-center-cleanning.html" class="px-10 py-3 hover:text-selected-text border-b border-gray-100 text-black">Data Center Cleaning</a>
 						<a href="./pc-and-server-maintenance.html" class="px-10 py-3 hover:text-selected-text border-b border-gray-100 text-black">PC & Server Maintenance</a>
-						<a href="./network-design-and-implementation.html" class="px-10 py-3 hover:text-selected-text border-b border-gray-100 text-black">Network Design & Implementation</a>
+						<a href="./network-design-and-implementation.html" class="px-10 py-3 hover:text-selected-text border-b border-gray-100 text-selected-text">Network Design & Implementation</a>
 						<a href="./it-and-information-security.html" class="px-10 py-3 hover:text-selected-text border-b border-gray-100 text-black">IT & Information Security</a>
 					</div>
 
