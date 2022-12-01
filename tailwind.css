@@ -840,6 +840,10 @@ video {
   width: 0.75rem;
 }
 
+.w-4\/5 {
+  width: 80%;
+}
+
 .flex-shrink {
   flex-shrink: 1;
 }
@@ -1810,6 +1814,11 @@ video {
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
 }
 
+.bg-secondary {
+  --tw-bg-opacity: 1;
+  background-color: rgb(145 145 164 / var(--tw-bg-opacity));
+}
+
 .decoration-slice {
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
@@ -1994,6 +2003,11 @@ video {
   padding-right: 4rem;
 }
 
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
 .pt-1 {
   padding-top: 0.25rem;
 }
@@ -2020,6 +2034,10 @@ video {
 
 .pb-16 {
   padding-bottom: 4rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
 }
 
 .text-left {
@@ -2748,6 +2766,10 @@ html, body {
 
   .md\:w-48 {
     width: 12rem;
+  }
+
+  .md\:w-1\/2 {
+    width: 50%;
   }
 
   .md\:grid-cols-2 {
